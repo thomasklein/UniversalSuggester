@@ -1,0 +1,177 @@
+/* @group Autocomplete */
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	padding: 2px 5px;
+	margin: 0px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_unselectable {
+	font-weight: normal !important;
+	color: black !important;
+	background: white !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+}
+
+.ac_loading {
+	background: url('ajax-loader_active.gif') right center no-repeat !important;
+}
+
+.ac_results strong {
+	background-color: #FFFFCC;
+	color: black;
+	text-decoration: underline;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #1A43F3;
+	color: white;
+}
+
+/* @end */
+
+
+/* @group Suggester Bgs */
+
+.us_categoryBg {
+	background-color: #b9ffbb !important;
+}
+	
+.us_linkBg {
+	background-color: #fff !important;
+}
+
+.us_userBg {
+	background-color: #fff6c6 !important;
+}
+	
+.us_attributeBg {
+	background-color: #ffb8b1 !important;
+}
+
+.us_transclusionBg {
+	background-color: black !important;
+	color: white;
+}
+
+.us_imageBg {
+	background-color: #e6e6e6 !important;
+}
+
+.us_mediaBg {
+	background-color: #94908C !important;
+	color: white;
+}
+
+.us_templateBg {
+	background-color: #ace0ff !important;
+}
+
+
+/* @end */
+
+#us_box {
+	float: left;
+	display:none;
+	position:relative;
+	z-index:24;
+}
+
+#us_box:hover {
+	z-index:25;
+}
+
+#us_box .suggesterHelp span{
+	display:none;	
+}
+
+#us_box .suggesterHelp span ul {
+	margin-top:0;	
+}
+
+#us_box:hover .suggesterHelp span {
+   display: block;
+   position: absolute; 
+   top:27px; left:5px; width:350px;
+   padding: 3px; 
+   background: #FFFFCC;
+   font-size:92%;
+   border: 1px solid grey;
+}
+
+#us_box img {
+	cursor:pointer;	
+}
+
+#us_userInput {
+	display:none;
+	padding:2px;
+	padding-right: 20px;
+	border: 1px solid grey;
+	height:16px;
+	font-size:100%;
+	background: url('ajax-loader_silent.gif') right center no-repeat;
+}
+
+.us_resultsHeader {
+	padding: 4px 0;
+	font-size: 125%;
+	display: block;
+}
+
+.us_nsMarker, .us_nsMarker strong {
+	color: black;
+	background: transparent;
+	font-variant: small-caps;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+.us_nsMarker {
+	padding-right: 0.3em;
+	font-size: 120%;
+}
+
+.ac_over .us_nsMarker, .ac_over .us_nsMarker strong {
+	color: white;	
+}
+
+.us_invisible {
+	visibility: hidden;
+	display:none;
+}

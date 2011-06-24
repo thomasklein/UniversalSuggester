@@ -1,0 +1,29 @@
+_UniversalSuggester_ is an extension for the "MediaWiki":http://www.mediawiki.org software.
+
+h2. Requirements
+
+* "MediaWiki":http://www.mediawiki.org >= 1.13
+* currently only works with the standard MediaWiki editor (the one with the blue button row, without any complex functionality)
+
+h2. Installation
+
+# Move the _UniversalSuggester_ directory into the <code>extension</code> directory of your MediaWiki installation
+# add the line <code>require_once("$IP/extensions/UniversalSuggester/UniversalSuggester.php");</code> to your <code>LocalSettings.php</code>
+
+h2. Setup
+
+Go to the method <code>initUS_RequestManager</code> in <code>UniversalSuggester.php</code> and modify the variables <code>$a_suggesters</code> (suggesters in use) and <code>$a_defaultNS</code> (namespaces to check for queries) to fit your needs.
+
+h2. Usage
+
+See the "MediaWiki extension page":http://www.mediawiki.org/wiki/Extension:UniversalSuggester#Usage for details on how to use this extension.
+
+h2. Credits
+
+This extension uses the fabulous jquery library ("v1.4.2":http://blog.jquery.com/2010/02/19/jquery-142-released/). Additionally a slightly modified version of the jQuery plugin "Autocomplete 1.0.2":http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/ by Dylan Verheul, Dan G. Switzer, Anjesh Tuladhar, Jörn Zaefferer is used.
+
+Also many thanks to the "Twoonix Software GmbH":http://www.twoonix.com/ for financial support and critical feedback which helped me a lot to finally make the code public.
+
+h2. License
+
+The _UniversalSuggester_</code>_ extension for MediaWiki is dual licensed under the terms of the MIT License (http://www.opensource.org/licenses/mit-license.php) and the GNU Public License (http://www.gnu.org/licenses/gpl.html).
