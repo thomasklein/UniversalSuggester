@@ -33,7 +33,7 @@ class US_SuggesterAttribute extends US_Suggester {
 	/*
 	 * @local array
 	 */	
-		$a_conditions[] = 'smw_namespace = 202';
+		$a_conditions[] = 'smw_namespace = ' . SMW_NS_PROPERTY;
   	/**
 	 * @local array
 	 */	

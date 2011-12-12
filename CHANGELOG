@@ -1,2 +1,5 @@
+== 1.01 (2011-12-12) ==
+* CHANGE: Used SMW constant 'SMW_NS_PROPERTY' instead of the fixed value '202' for the SMW namespace
+
 == 1.0 (2011-06-23) ==
 * init repository
