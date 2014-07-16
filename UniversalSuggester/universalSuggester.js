@@ -56,8 +56,8 @@
 	ga_suggesterSwitchValues[0] = {"name":"User",
 								  "shortcuts":[gKEY.u],
 								  "cssClass":"us_userBg",
-								  "snippet":["[[Benutzer:%res]]",
-								  			 "[[Benutzer:%res|%selText]]"]};
+								  "snippet":["[[User:%res]]",
+								  			 "[[User:%res|%selText]]"]};
 	
 	ga_suggesterSwitchValues[1] = {"name":"Link",
 								  "shortcuts":[gKEY.l],
